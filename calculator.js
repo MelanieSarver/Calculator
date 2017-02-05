@@ -27,4 +27,11 @@ $(document).ready(function() {
         testNumLength(num1);
     });
 
+    //gets the operand
+    $('#operators > a').not('#equals').click(function() {
+        doThings = $(this).text();
+        num2 = num1;
+        num1 = "";
+    });
+
 });
