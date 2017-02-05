@@ -34,4 +34,13 @@ $(document).ready(function() {
         num1 = "";
     });
 
+    //handles the function of the C/CE buttons
+    $("#clear, #clearall").click(function() {
+        num1 = "";
+        screen.text("0");
+        if ($(this).attr("id") == "clearall") {
+            num2 = "";
+        }
+    });
+
 });
