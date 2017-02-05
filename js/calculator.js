@@ -43,4 +43,33 @@ $(document).ready(function() {
         }
     });
 
+    //This is the math stuff
+    $("#equals").click(function() {
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        screen.text(total(num2, num1));
+    });
+
+    function total(num2, num1) {
+        switch (doThings) {
+            case "+":
+                return num2 + num1;
+                break;
+
+            case "-":
+                return num2 - num1;
+                break;
+
+            case "/":
+                return num2 / num1;
+                break;
+
+            case "x":
+                return num2 * num1;
+                break;
+            default:
+                console.log("error");
+        }
+    }
+
 });
